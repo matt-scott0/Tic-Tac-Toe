@@ -14,9 +14,15 @@ const gameController = (() => {
     let board = Array(9);
     console.log(player1.getName());
     let players = [player1, player2];
-    let currentTurn = player1;
+    let currentPlayerTurn = player1;
     let xArray = [];
     let oArray = [];
 })();
 
 
+const itemArray = document.querySelectorAll('div.grid-item'); // this gives us all the items as an array.
+itemArray.forEach( (item) => {
+    item.onclick = (e) =>  {
+        console.log(e.currentTarget.id);
+    }
+})

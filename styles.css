@@ -33,6 +33,12 @@ html, body {
     justify-content: center;
 }
 
+.player-1, 
+.player-2 {
+    margin-top: 300px;
+    padding: 50px;
+}
+
 .game-grid {
     width: 750px;
     height: 750px;
@@ -42,7 +48,7 @@ html, body {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.item {
+.grid-item {
     border: 1px solid #000;
     text-align: center;
 }
