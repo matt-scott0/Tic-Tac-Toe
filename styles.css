@@ -50,5 +50,8 @@ html, body {
 
 .grid-item {
     border: 1px solid #000;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 148px;
 }
