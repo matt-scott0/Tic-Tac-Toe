@@ -33,6 +33,14 @@ const gameController = (() => {
         xArray = [];
         oArray = [];
         board.fill(null);
+        let grid_items = document.querySelectorAll('div.grid-item');
+        console.log(grid_items);
+        for(let i = 0; i < grid_items.length; i++) {
+            grid_items[i].innerHTML = '';
+        }
+
+
+        return;
     }
 
     const checkWin = () => {
@@ -85,7 +93,8 @@ const gameController = (() => {
             alert("It's a draw!");
         }
         if(checkWin()) {
-            alert(`${currentPlayerTurn.getName()} has won the game!`)
+            alert(`${currentPlayerTurn.getName()} has won the game!`);
+            resetGame();
         }
         changePlayerTurn();
         // console.log(board);
